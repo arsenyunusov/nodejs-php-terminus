@@ -8,6 +8,9 @@ RUN cd /tmp && \
  php installer.phar install && \
  npm i -g gulp gulp-cli
 
+# The slim image will automatically build the extensions from the list provided at the very top of the file.
+FROM thecodingmachine/php:7.2-v2-slim-apache
+
 ENV APP_ENV=prod \
     APACHE_DOCUMENT_ROOT=public/
 
