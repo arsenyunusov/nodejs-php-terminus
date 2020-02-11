@@ -12,7 +12,7 @@ RUN cd /tmp && \
 # The slim image will automatically build the extensions from the list provided at the very top of the file.
 FROM thecodingmachine/php:7.2-v2-slim-cli
 
-COPY --from=build /usr/src/app .
+COPY --from=build / .
 
 USER root
 RUN cd /tmp && \
