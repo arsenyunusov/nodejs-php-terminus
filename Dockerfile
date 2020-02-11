@@ -13,10 +13,3 @@ RUN cd /tmp && \
 FROM thecodingmachine/php:7.2-v2-slim-cli
 
 COPY --from=build / .
-
-USER root
-RUN cd /tmp && \
- curl -O "https://raw.githubusercontent.com/pantheon-systems/terminus-installer/master/builds/installer.phar" && \
- php installer.phar install && \
- npm install -g gulp-cli && \
- npm install -g gulp
