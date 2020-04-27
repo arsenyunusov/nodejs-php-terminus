@@ -1,5 +1,5 @@
 ARG PHP_EXTENSIONS="gd gettext gmp gnupg igbinary imagick imap zip soap"
-ARG NODE_VERSION=12
+ARG NODE_VERSION=10.20.1
 
 FROM thecodingmachine/php:7.2-v2-slim-cli
 
