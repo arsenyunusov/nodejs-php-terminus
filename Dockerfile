@@ -1,4 +1,4 @@
-ARG PHP_EXTENSIONS="gd gettext gmp gnupg igbinary imagick imap zip soap"
+ARG PHP_EXTENSIONS="gd gettext gmp gnupg igbinary imagick imap soap"
 ARG NODE_VERSION=12
 
 FROM thecodingmachine/php:7.4-v3-slim-cli
