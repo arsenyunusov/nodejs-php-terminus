@@ -1,7 +1,7 @@
-ARG PHP_EXTENSIONS="gd gettext gmp gnupg igbinary imagick imap soap"
+ARG PHP_EXTENSIONS="gd gettext gmp gnupg igbinary imagick imap soap intl"
 ARG NODE_VERSION=12
 
-FROM thecodingmachine/php:7.2-v2-slim-cli
+FROM thecodingmachine/php:7.2-v4-slim-cli
 
 USER root
 RUN cd /tmp && \
