@@ -9,7 +9,7 @@ RUN cd /tmp && \
  apt-get install rsync -y && \
  apt-get install patch -y && \
  apt-get install php7.4-zip -y && \
- composer self-update --1 -y && \
+ composer self-update --1 && \
  php installer.phar install && \
  npm install -g gulp-cli && \
  npm install -g gulp
