@@ -1,5 +1,5 @@
 ARG PHP_EXTENSIONS="gd gmp gnupg igbinary imagick imap soap"
-ARG NODE_VERSION=12
+ARG NODE_VERSION=10
 
 FROM thecodingmachine/php:7.4-v4-slim-cli
 
