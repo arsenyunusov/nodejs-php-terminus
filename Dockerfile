@@ -1,11 +1,11 @@
 ARG PHP_EXTENSIONS="gd gettext gmp gnupg igbinary imagick imap zip soap"
 ARG NODE_VERSION=12
 
-FROM thecodingmachine/php:7.2-v2-slim-cli
+FROM thecodingmachine/php:8.1-v4-slim-cli
 
 USER root
 RUN cd /tmp && \
- curl -O "https://raw.githubusercontent.com/pantheon-systems/terminus-installer/master/builds/installer.phar" && \
+ curl -O "https://raw.githubusercontent.com/pantheon-systems/terminus-installer/master/builds/installer.phar"  && php installer.phar update && \
  apt-get install rsync -y && \
  php installer.phar install && \
  npm install -g gulp-cli && \
